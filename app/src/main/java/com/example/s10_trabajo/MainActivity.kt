@@ -27,6 +27,5 @@ class MainActivity : AppCompatActivity() {
         recyclerTareas.layoutManager = LinearLayoutManager(this)
         recyclerTareas.adapter = TareaAdapter(tareas)
 
-        }
     }
 }
