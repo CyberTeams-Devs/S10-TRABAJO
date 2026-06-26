@@ -16,16 +16,18 @@ class MainActivity : AppCompatActivity() {
 
         val recyclerTareas = findViewById<RecyclerView>(R.id.recyclerTareas)
 
-        val tareas = listOf(
-            "Comprar pan",
-            "Llamar a mama",
-            "Terminar proyecto",
-            "Estudiar Android",
-            "ir al gimnasio"
+        val productos = listOf(
+            Producto("Arroz 2kg", R.drawable.imagen4, "Abastos", 5.25F),
+            Producto("Azucar 2kg", R.drawable.imagen4, "Abastos", 25.20F),
+            Producto("Detergente", R.drawable.imagen4, "Limpieza", 10.20F),
+            Producto("Aceite", R.drawable.imagen4, "Abastos", 12.20F),
+            Producto("Dulces",R.drawable.imagen4,"Abastos",11.20F),
+            Producto("Atun", R.drawable.imagen4, "Abastos", 5.20F),
+            Producto("Café",R.drawable.imagen4,"Abastos", 3.20F)
         )
 
         recyclerTareas.layoutManager = LinearLayoutManager(this)
-        recyclerTareas.adapter = TareaAdapter(tareas)
+        recyclerTareas.adapter = ProductoAdapter(productos)
 
     }
 }
