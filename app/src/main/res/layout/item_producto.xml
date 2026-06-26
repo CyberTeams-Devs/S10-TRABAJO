@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:text="Categoria del producto"
         android:textSize="16sp"
-        android:ayout_below="@+id/tvNombreProducto"
+        android:layout_below="@+id/tvNombreProducto"
         android:layout_alignStart="@+id/tvNombreProducto" />
 
     <TextView
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:text="Precio Producto"
         android:textSize="16sp"
-        android:ayout_below="@+id/tvCategoria"
+        android:layout_below="@+id/tvCategoria"
         android:layout_alignStart="@+id/tvCategoria" />
 
 </RelativeLayout>
